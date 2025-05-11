@@ -42,7 +42,7 @@ return {
     keymap.set(
       "n",
       "<leader>fg",
-      "<cmd>Telescope live_grep<cr>"
+      "<cmd>Telescope live_grep<cr>",
       { desc = "Recherche de chaines de caractere dans le contenu des fichiers" }
     )
     keymap.set(

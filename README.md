@@ -11,6 +11,8 @@
 - `ctrl + l` : fenetre de droite
 - `ctrl + j` : fenetre du bas
 - `ctrl + k` : fenetre du haut
+- `L` : changer vers buffer de droite (la barre du haut)
+- `H` : changer vers buffer de gauche 
 
 ### Mode 
 - `i` : insertion 
@@ -19,6 +21,7 @@
 
 ### Nvim-Tree
 - `espace + e` : ouverture/fermeture arborescence
+- `a` : creation d'un nouveau fichier
 
 ### Lazy-vim
 - `:Lazy` : ouvre la fenetre de gestion des plugins
@@ -33,13 +36,13 @@
 - `espace + fb` : cherche dans les noms de buffers
 - `espace + fx` : cherche le mots sous le curseur dans le contenu des fichiers
 
-
 ## Structure
 
 - `lua/core/init.lua` : fichier qui permet de charger les differents fichiers Core.
 - `lua/core/keymaps.lua` : fichier qui contient les raccourcis clavier
 - `lua/plugins/nvim-tree.lua` : configuration du plugins nvim tree
 - `lua/plugins/telescope.lua` : configuration du plugin telescope
+- `lua/plugins/bufferline.lua` : configuration bufferline
 
 ## Fonctionnement
 
@@ -52,7 +55,7 @@ Configuration de base pour Neovim
 - `lazy-vim` : permet de gerer l'installation et la configuration des pluggins.
 - `nvim-tree` : arborescence des fichiers  
 - `telescope` : permet de rechercher
-
+- `bufferline` : affiche la barre des fichiers ouvers
 ## Themes 
 
 Pour ajouter de nouveau theme, creer un nouveau fichier `lua/plugins/<name_theme>.lua`

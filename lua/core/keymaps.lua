@@ -44,3 +44,5 @@ keymap("n", "<C-l>", "<C-w>l", { desc = "Deplace le curseur dans la fenetre de d
 keymap("n", "<C-j>", "<C-w>j", { desc = "Deplace le curseur dans la fenetre du bas" })
 keymap("n", "<C-k>", "<C-w>k", { desc = "Deplace le curseur dans la fenetre du haut" })
 
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
