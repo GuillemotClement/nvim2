@@ -7,7 +7,7 @@ opt.number = true -- affiche le nom absolu de la ligne active lorsaue relativenu
 -- tabs et indentation
 opt.tabstop = 2 -- 2 espaces pour les tabulations
 opt.shiftwidth = 2 -- 2 espaces pour la taille des indentations
-opt.extandtab = true --change les tabulations en espaces
+opt.expandtab = true --change les tabulations en espaces
 opt.autoindent = true -- garde l'indentation actuelle a la prochaine ligne
 
 -- recherche
@@ -23,7 +23,7 @@ opt.cursorline = true -- surlignage de la ligne active
 -- termguicolors est necessaire pour les theme moderne
 opt.termguicolors = true
 opt.background = "dark" -- dark ou light selon preference
-opt.signcolum = "yes" -- affiche la colonne en plus a gauche pour afficher les signes -> evite de decaler le texte
+opt.signcolumn = "yes" -- affiche la colonne en plus a gauche pour afficher les signes -> evite de decaler le texte
 
 -- retour 
 opt.backspace = "indent,eol,start" -- autorise l'utilisation de retour quand on indente, la fin de ligne ou au debut
