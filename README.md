@@ -25,13 +25,21 @@
 - `q` : quitter 
 - `U` : maj des plugins 
 
+### Telescope
+- `ctrl + k` : remonter dans la liste de selection
+- `ctrl + j` : descendre dans la liste de selection
+- `espace + ff` : cherche dans les noms de fichiers
+- `espace + fg` : cherche dans le fichier
+- `espace + fb` : cherche dans les noms de buffers
+- `espace + fx` : cherche le mots sous le curseur dans le contenu des fichiers
+
 
 ## Structure
 
 - `lua/core/init.lua` : fichier qui permet de charger les differents fichiers Core.
 - `lua/core/keymaps.lua` : fichier qui contient les raccourcis clavier
 - `lua/plugins/nvim-tree.lua` : configuration du plugins nvim tree
-
+- `lua/plugins/telescope.lua` : configuration du plugin telescope
 
 ## Fonctionnement
 
@@ -43,7 +51,7 @@ Configuration de base pour Neovim
 
 - `lazy-vim` : permet de gerer l'installation et la configuration des pluggins.
 - `nvim-tree` : arborescence des fichiers  
-
+- `telescope` : permet de rechercher
 
 ## Themes 
 
