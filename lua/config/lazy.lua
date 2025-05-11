@@ -17,6 +17,12 @@ vim.opt.rtp:prepend(lazypath)
 
 -- configuration de lazy.nvim et importation du repertoire 'plugins'
 require("lazy").setup({ { import = "plugins" } }, {
+  -- verifie auto des mise a jour de plugins sans notifier
+  -- lualine viens afficher un icon
+  checker = {
+    enabled = true,
+    notify = false,
+  },
   -- definition du theme dans la fenetre
   install = { colorscheme = { "tokyonight" } },
   -- desactive la notification au demarrage

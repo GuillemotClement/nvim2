@@ -43,6 +43,7 @@
 - `lua/plugins/nvim-tree.lua` : configuration du plugins nvim tree
 - `lua/plugins/telescope.lua` : configuration du plugin telescope
 - `lua/plugins/bufferline.lua` : configuration bufferline
+- `lua/plugins/lualine.lua` : configuration de la barre de status
 
 ## Fonctionnement
 
@@ -56,6 +57,10 @@ Configuration de base pour Neovim
 - `nvim-tree` : arborescence des fichiers  
 - `telescope` : permet de rechercher
 - `bufferline` : affiche la barre des fichiers ouvers
+- `lualine` : affiche la barre de status (info git)
+
+
+
 ## Themes 
 
 Pour ajouter de nouveau theme, creer un nouveau fichier `lua/plugins/<name_theme>.lua`
