@@ -1,7 +1,7 @@
 # NVIM
 
 Configuration de base pour Neovim
-
+![Schema de chargement des options](./doc/shemaChargement.png)
 
 ## Source 
 
