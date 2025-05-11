@@ -36,6 +36,11 @@
 - `espace + fb` : cherche dans les noms de buffers
 - `espace + fx` : cherche le mots sous le curseur dans le contenu des fichiers
 
+### Treesitter
+- `ctrl + espace` : demarre selection incrementale + extension de la selection
+- `backspace` : reduire la selection
+
+
 ## Structure
 
 - `lua/core/init.lua` : fichier qui permet de charger les differents fichiers Core.
@@ -44,7 +49,7 @@
 - `lua/plugins/telescope.lua` : configuration du plugin telescope
 - `lua/plugins/bufferline.lua` : configuration bufferline
 - `lua/plugins/lualine.lua` : configuration de la barre de status
-
+- `lua/plugins/treesitter.lua` : configuration treesitter
 ## Fonctionnement
 
 Configuration de base pour Neovim
@@ -58,7 +63,7 @@ Configuration de base pour Neovim
 - `telescope` : permet de rechercher
 - `bufferline` : affiche la barre des fichiers ouvers
 - `lualine` : affiche la barre de status (info git)
-
+- `nvim-treesitter` : parsing des languages de prog (coloration syntaxique, indentation intelligente)
 
 
 ## Themes 
