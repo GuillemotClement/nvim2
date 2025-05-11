@@ -37,3 +37,10 @@ keymap("x", "<S-i>", ":move '<-2<CR>gv-gv", { desc = "Deplace le texte selection
 -- :move '>+1 => deplace le bloc selectionner une ligne plus bas
 keymap("x", "<S-k>", ":move '>+1<CR>gv-gv", { desc = "Deplace le texte selectionner vers le en mode visuel bloc" })
 
+
+-- changement de fenetre avec Ctrl + deplacement 
+keymap("n", "<C-h>", "<C-w>h", { desc = "Deplace le curseur dans la fenetre de gauche" })
+keymap("n", "<C-l>", "<C-w>l", { desc = "Deplace le curseur dans la fenetre de droite" })
+keymap("n", "<C-j>", "<C-w>j", { desc = "Deplace le curseur dans la fenetre du bas" })
+keymap("n", "<C-k>", "<C-w>k", { desc = "Deplace le curseur dans la fenetre du haut" })
+
