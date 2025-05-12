@@ -55,6 +55,25 @@
 - `Ctrl + e` : ferme le menu de completion 
 - `entree` : valide la sugestion ou la premiere si rien de selectionner
 
+### LSP 
+- `gR` : Affiche les references LSP
+- `gD` : Aller a la declaration 
+- `gd` : afficher les definitions LSP
+- `gi` : affiche les definition de type LSP 
+- `gt` : affiche les definitions de type LSP 
+- `gs` : affiche l'aide de signature
+- `espace + ca` : affiche les actions de code disponible 
+- `espace + rn` : renommage intelligent 
+- `espace + D` : affiche les diag du buffer
+- `espace + d` : affiche les diag de la ligne courante 
+- `[d` : aller au dig precedent 
+- `]d` : aller au diag suivant 
+- `K` : affiche la documentation sous le curseur 
+- `F` : formate le buffer 
+- `espace + rs` : redemarre serveur LSP 
+
+
+
 ## Structure
 
 - `lua/core/init.lua` : fichier qui permet de charger les differents fichiers Core.
