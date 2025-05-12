@@ -2,6 +2,7 @@ return {
   "williamboman/mason.nvim",
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
   },
   config = function()
     -- import de mason
@@ -13,6 +14,9 @@ return {
     -- import de lspconfig
     local lspconfig = require("lspconfig")
 
+    -- import de mason-tool-installer
+    local mason_tool_installer = require("mason-tool-installer")
+    
     -- active mason et personnalise les icônes
     mason.setup({
       ui = {
@@ -21,6 +25,16 @@ return {
           package_pending = "➜",
           package_uninstalled = "✗",
         },
+      },
+    })
+
+    mason_tool_installer.setup({
+      ensure_installed = {
+        "elm-format", -- elm formater
+        "prettier", -- prettier formatter
+        "ruff", -- ruff formater (différent du LSP, mais dans le même executable)
+        "stylua", -- lua formater
+        "eslint_d", -- eslint formater
       },
     })
 
@@ -109,6 +123,17 @@ return {
                   styleLints = {
                     enable = true,
                   },
+                },
+              },
+            },
+          })
+        end,
+        lua_ls = function()
+          lspconfig.lua_ls.setup({
+            settings = {
+              Lua = {
+                diagnostics = {
+                  globals = { "vim" },
                 },
               },
             },
