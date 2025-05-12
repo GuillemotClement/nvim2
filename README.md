@@ -13,6 +13,12 @@
 - `ctrl + k` : fenetre du haut
 - `L` : changer vers buffer de droite (la barre du haut)
 - `H` : changer vers buffer de gauche 
+- `a` : insertion apres le curseur
+- `I` : insertion en debut de ligne
+- `A` : insertion en fin de ligne
+- `o` : insere une nouvelle ligne en dessous de la ligne courante
+- `O` : insere une nouvelle ligne au dessus de la ligne courante
+- `r` : remplace les caracteres sous le curseur
 
 ### Mode 
 - `i` : insertion 
@@ -40,6 +46,14 @@
 - `ctrl + espace` : demarre selection incrementale + extension de la selection
 - `backspace` : reduire la selection
 
+### Nvim-cmp
+- `Ctrl + k` : selection element precedent de la selection
+- `CTRL + j` : selection element suivant de la selection
+- `Ctrl + b` : fais defiler la doc vers le haut
+- `Crrl + f` : fais defiler vers le bas
+- `Ctrl + espace` : ouvre le menu de completion
+- `Ctrl + e` : ferme le menu de completion 
+- `entree` : valide la sugestion ou la premiere si rien de selectionner
 
 ## Structure
 
@@ -49,7 +63,9 @@
 - `lua/plugins/telescope.lua` : configuration du plugin telescope
 - `lua/plugins/bufferline.lua` : configuration bufferline
 - `lua/plugins/lualine.lua` : configuration de la barre de status
-- `lua/plugins/treesitter.lua` : configuration treesitter
+- `lua/plugins/treesitter.lua` : configuration treesitter (ajout des language pris en compte)
+- `lua/plugins/nvim-cmp.lua` : ajout de l'autocomplete
+
 ## Fonctionnement
 
 Configuration de base pour Neovim
@@ -64,7 +80,7 @@ Configuration de base pour Neovim
 - `bufferline` : affiche la barre des fichiers ouvers
 - `lualine` : affiche la barre de status (info git)
 - `nvim-treesitter` : parsing des languages de prog (coloration syntaxique, indentation intelligente)
-
+- `nvim-cmp` : ajout de l'autocomplete
 
 ## Themes 
 
